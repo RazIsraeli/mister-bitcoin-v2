@@ -19,6 +19,7 @@ class _ContactPage extends Component {
 
   setFilterBy = (filterBy) => {
     this.props.setFilterBy(filterBy)
+    this.props.loadContacts(this.props.filterBy)
   }
 
   onRemove = (contactId) => {
