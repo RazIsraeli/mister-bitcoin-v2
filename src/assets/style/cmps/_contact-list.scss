@@ -1,0 +1,25 @@
+.contact-list {
+  width: 100%;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    gap: 2em;
+
+    padding: 0;
+
+    li.contact-item {
+      list-style: none;
+
+      height: 120px;
+      // width: 350px;
+      // box-shadow: 0 0 5px 2px #00000030;
+      box-shadow: 0 0 13px 1px $clr4;
+      border-radius: 12px;
+    }
+    li.contact-item:hover {
+      cursor: pointer;
+      box-shadow: 0 0 13px 1px $clr5;
+      // box-shadow: 0 0 5px 5px #162a855b;
+    }
+  }
+}

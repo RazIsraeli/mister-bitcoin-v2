@@ -1,0 +1,14 @@
+.statistic-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    box-shadow: 0 0 13px 1px $clr4;
+  }
+}

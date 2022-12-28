@@ -1,0 +1,74 @@
+.contact-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .contact-avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 1px lighten($clr3, 30%);
+
+    margin-bottom: 2em;
+  }
+
+  form {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    box-shadow: 0 0 13px 1px $clr4;
+
+    > *:nth-child(even):not(button) {
+      margin-bottom: 1em;
+    }
+    > *:nth-child(odd):not(button) {
+      font-weight: 700;
+      color: $clr3;
+    }
+
+    .action-btns {
+      gap: 1em;
+    }
+
+    button {
+      margin-top: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      //   color: $clr6;
+      //   background-color: $clr2;
+      border: none;
+      box-shadow: 0 0 0 1px $clr1;
+    }
+
+    button.primary {
+      color: $clr6;
+      background-color: $clr2;
+    }
+    button.secondary {
+      color: $clr2;
+      background-color: $clr6;
+    }
+
+    button.primary:hover {
+      background-color: lighten($clr2, 10%);
+    }
+    button.secondary:hover {
+      color: $clr6;
+      background-color: $clr4;
+    }
+  }
+}

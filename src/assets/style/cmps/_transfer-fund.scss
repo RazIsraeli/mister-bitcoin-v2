@@ -1,0 +1,81 @@
+.transfer-fund {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  padding: 1em;
+  height: fit-content;
+  width: 450px;
+  box-shadow: 0 0 13px 1px $clr4;
+
+  .transfer-details {
+    h2,
+    h3 {
+      margin-bottom: 0.5em;
+      color: $clr3;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    input {
+      font-size: 16px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      border: none;
+      box-shadow: 0 0 0 1px $clr1;
+      color: $clr6;
+      background-color: $clr2;
+    }
+
+    .action-btns {
+      gap: 1em;
+    }
+    button.primary {
+      color: $clr6;
+      background-color: $clr2;
+    }
+    button.secondary {
+      color: $clr2;
+      background-color: $clr6;
+    }
+
+    button.primary:hover {
+      background-color: lighten($clr2, 10%);
+    }
+    button.secondary:hover {
+      color: $clr6;
+      background-color: $clr4;
+    }
+  }
+
+  p.msg {
+    color: red;
+  }
+
+  p.user-balance {
+    font-weight: 600;
+  }
+
+  p.green.user-balance {
+    color: green;
+  }
+
+  p.red.user-balance {
+    color: red;
+  }
+}

@@ -1,0 +1,21 @@
+.app-header {
+  background-color: $clr1;
+  color: whitesmoke;
+  padding: 0 15px;
+
+  .logo {
+    padding: 1em 0;
+  }
+  nav {
+    a {
+      font-size: 20px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &.active {
+        color: $clr3;
+      }
+    }
+  }
+}

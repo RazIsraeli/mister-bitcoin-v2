@@ -1,0 +1,36 @@
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  max-height: 200px;
+  width: fit-content;
+  box-shadow: 0 0 13px 1px $clr4;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    input {
+      font-size: 16px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      border: none;
+      box-shadow: 0 0 0 1px $clr1;
+      color: $clr6;
+      background-color: $clr2;
+    }
+  }
+}
